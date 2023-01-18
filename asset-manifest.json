@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Crypto-TRD/static/css/main.f885d46e.css",
-    "main.js": "/Crypto-TRD/static/js/main.07bac604.js",
+    "main.js": "/Crypto-TRD/static/js/main.a4cb4b8c.js",
     "static/media/Crypto-TRD-logo.png": "/Crypto-TRD/static/media/Crypto-TRD-logo.253a894236ab2703c1a7.png",
     "static/media/operator.svg": "/Crypto-TRD/static/media/operator.3d0ee3420b8efb177b83a5fd3ca4dc4e.svg",
     "index.html": "/Crypto-TRD/index.html",
     "main.f885d46e.css.map": "/Crypto-TRD/static/css/main.f885d46e.css.map",
-    "main.07bac604.js.map": "/Crypto-TRD/static/js/main.07bac604.js.map"
+    "main.a4cb4b8c.js.map": "/Crypto-TRD/static/js/main.a4cb4b8c.js.map"
   },
   "entrypoints": [
     "static/css/main.f885d46e.css",
-    "static/js/main.07bac604.js"
+    "static/js/main.a4cb4b8c.js"
   ]
 }
