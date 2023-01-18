@@ -1,0 +1,134 @@
+@import "./Sass/style.scss";
+
+:root {
+  --color-dark-blue: #191f3e;
+  --color-success: #4bb677;
+  --color-danger: #ea4b46;
+  --color-blue: #466bff;
+  --color-orange: #ff9900;
+  --color-white: #fff;
+  --color-dark-white: #fdfdfd;
+  --color-light-gray: #f2f2f2;
+  --color-dark: #141a36;
+  --color-gray: #62667a;
+  --color-icon: rgb(2, 90, 108);
+  --color-light-black: #181818;
+  --color-black: #111111;
+
+  --container-width-lg: 95%;
+  --container-width-md: 85%;
+  --container-width-sm: 90%;
+
+  --border-radius-sm: 0.4rem;
+  --border-radius-md: 0.8rem;
+  --border-radius-lg: 1.2rem;
+
+  --transition: 0.2s ease-in;
+
+  --box-shadow: 3px 3px 6px #111;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--color-black);
+  color: var(--color-white);
+  line-height: 1.7;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+/* =============== GENERAL STYLES =============== */
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+.placeholder {
+  background: var(--color-light-black);
+  border-radius: var(--border-radius-lg);
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+button,
+input,
+textarea,
+select {
+  outline: none;
+  border: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  .section {
+    margin-top: 6rem;
+  }
+}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  .section > h2 {
+    margin-bottom: 2rem;
+  }
+}

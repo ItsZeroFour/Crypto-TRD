@@ -1,0 +1,152 @@
+.latestPrice {
+  margin: 25px;
+  width: 41%;
+}
+
+.latestPrice__list {
+  background: var(--color-light-black) !important;
+  border-radius: var(--border-radius-lg) !important;
+}
+
+.latestPrice__item {
+  padding: 6px;
+
+  h4 {
+    border-radius: var(--border-radius-sm) !important;
+    padding: 2px;
+  }
+}
+
+.placeholder {
+  background: var(--color-light-black) !important;
+  border-radius: var(--border-radius-lg) !important;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1880px) {
+  .latestPrice {
+    width: 41%;
+  }
+}
+
+@media (max-width: 1848px) {
+  .latestPrice {
+    width: 40.5%;
+  }
+}
+
+@media (max-width: 1800px) {
+  .latestPrice {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1750px) {
+  .latestPrice {
+    width: 39%;
+  }
+}
+
+@media (max-width: 1650px) {
+  .latestPrice {
+    width: 37%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .latestPrice {
+    width: 36%;
+  }
+}
+
+@media (max-width: 1550px) {
+  .latestPrice {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .latestPrice {
+    width: 34%;
+  }
+}
+
+@media (max-width: 1450px) {
+  .latestPrice {
+    width: 33%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .latestPrice {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .latestPrice {
+    width: 29%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .latestPrice {
+    width: 28%;
+  }
+}
+
+@media (max-width: 1270px) {
+  .latestPrice {
+    width: 27%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .latestPrice {
+    width: 26%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .latestPrice {
+    width: 24%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .latestPrice {
+    width: 22%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .latestPrice {
+    width: 20%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .latestPrice {
+    width: 18%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .latestPrice {
+    width: 16%;
+  }
+}
+
+@media (max-width: 994px) {
+  .latestPrice {
+    width: 45rem;
+  }
+}
+
+@media (max-width: 786px) {
+  .latestPrice {
+    width: 77%;
+  }
+}

@@ -1,0 +1,129 @@
+.news-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.news__item {
+  background: var(--color-light-black) !important;
+  border-radius: var(--border-radius-lg) !important;
+  margin: 1rem;
+  padding: 1rem;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition) !important;
+
+  &:hover {
+    box-shadow: 5px 5px 0px 5px #1f1f1f;
+  }
+
+  @media (max-width: 341px) {
+    margin: 0;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 341px) {
+    height: auto;
+  }
+}
+
+.news__item-header {
+  display: flex;
+}
+
+.news__item-img {
+  width: 200px;
+  height: 200px;
+  border-radius: var(--border-radius-md) !important;
+
+  @media (max-width: 1024px) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.news__item-title {
+  width: 200px;
+  height: 200px;
+
+  @media (max-width: 490px) {
+    width: auto;
+  }
+
+  @media (max-width: 341px) {
+    font-size: 1rem;
+  }
+}
+
+.news__item-description {
+  p {
+    margin-top: 1.5rem;
+    width: 400px;
+
+    @media (max-width: 490px) {
+      width: auto;
+    }
+
+    @media (max-width: 341px) {
+      font-size: 0.9rem;
+      margin-top: 0rem;
+    }
+  }
+}
+
+.news__item-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+
+  h4 {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  @media (max-width: 341px) {
+    margin-top: 1rem;
+  }
+}
+
+.news__item-footer-left {
+  display: flex;
+}
+
+.news__item-footer-right {
+  p {
+    margin-top: 0.5rem;
+  }
+}
+
+.news__link {
+  color: var(--color-white) !important;
+
+  &:first-child {
+    @media (max-width: 994px) {
+      margin-top: 3rem;
+    }
+  }
+}
+
+.news__preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rem;
+}
+
+.news__item-footer-date {
+  margin: 0.3rem;
+}

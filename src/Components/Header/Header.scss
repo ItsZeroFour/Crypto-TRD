@@ -1,0 +1,225 @@
+.header {
+  display: flex;
+  background-color: var(--color-light-black) !important;
+  padding: 5px;
+  border-bottom-left-radius: var(--border-radius-sm) !important;
+  border-bottom-right-radius: var(--border-radius-sm) !important;
+
+  @media (max-width: 994px) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+}
+
+.header__nav {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+}
+
+.header__nav-item {
+  margin-left: 2rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  color: #d9d9d9;
+  cursor: pointer;
+
+  @media (max-width: 1136px) {
+    margin-left: 1rem;
+  }
+
+  .header__nav-link {
+    color: var(--color-white) !important;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  input {
+    background: var(--color-black) !important;
+    color: var(--color-white) !important;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    border-radius: var(--border-radius-lg);
+    width: 20rem;
+
+    @media (max-width: 1136px) {
+      width: 15rem;
+    }
+
+    &::-webkit-input-placeholder {
+      color: var(--color-gray) !important;
+      opacity: 0.5;
+    }
+
+    &::-moz-placeholder {
+      color: var(--color-gray) !important;
+      opacity: 0.5;
+    }
+
+    &:-ms-input-placeholder {
+      color: var(--color-gray) !important;
+      opacity: 0.5;
+    }
+
+    &::-ms-input-placeholder {
+      color: var(--color-gray) !important;
+      opacity: 0.5;
+    }
+
+    &::placeholder {
+      color: var(--color-gray) !important;
+      opacity: 0.5;
+    }
+  }
+}
+
+// ========= ICONS =========
+
+.header__search-icon {
+  margin-right: 0.5rem;
+}
+
+.header__ellipsis {
+  background-color: var(--color-light-black) !important;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+.header__button {
+  color: var(--color-white) !important;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.9rem;
+  margin-left: 1rem;
+  border-radius: var(--border-radius-sm) !important;
+  background: var(--color-blue) !important;
+  transition: var(--transition);
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  svg {
+    margin-top: 0.3rem;
+  }
+
+  @media (max-width: 1160px) {
+    font-size: 0.8rem;
+  }
+}
+
+// ================== MOBILE CSS ==================
+
+.mobile__menu {
+  position: fixed;
+  background: var(--color-light-black) !important;
+  margin: 0;
+  padding: 0;
+  width: 20rem;
+  height: 40rem;
+  border-bottom-left-radius: var(--border-radius-lg) !important;
+  border-bottom-right-radius: var(--border-radius-lg) !important;
+  z-index: 999;
+  margin-top: 2.9rem;
+
+  @media (max-width: 343px) {
+    width: 15rem;
+  }
+
+  @media (min-width: 994px) {
+    display: none;
+  }
+}
+
+.header__mobile-menu {
+  display: none;
+  font-size: 2rem;
+  padding: 5px 10px;
+}
+
+.mobile__menu-list {
+  &:first-child {
+    margin-top: 1rem;
+  }
+}
+
+.mobile__menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    color: var(--color-white) !important;
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+}
+
+.mobile__menu-item-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+
+  input {
+    background: var(--color-black) !important;
+    border-radius: var(--border-radius-md) !important;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: var(--color-white) !important;
+    width: 80%;
+  }
+
+  button {
+    // margin-top: 1rem;
+    display: flex;
+    font-size: 0.9rem;
+  }
+}
+
+.mobile__menu-item-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+
+  a {
+    color: var(--color-white) !important;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 994px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__mobile-menu {
+    display: block;
+  }
+}
+
+.mobile__logo {
+  height: 5rem;
+  width: auto;
+}
+
+.header__logo {
+  width: 10rem;
+  margin-top: 0.7rem;
+  height: auto;
+
+  @media (max-width: 994px) {
+    display: none;
+  }
+}
+
+.mobile__button {
+  display: flex;
+}

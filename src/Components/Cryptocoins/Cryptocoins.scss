@@ -1,0 +1,88 @@
+.cryptocoins {
+  background: var(--color-light-black);
+  width: 30%;
+  margin: 25px;
+  border-radius: var(--border-radius-lg);
+
+  @media (max-width: 994px) {
+    width: 45rem;
+  }
+
+  @media (max-width: 786px) {
+    width: 77%;
+    // margin-left: 2.2rem;
+  }
+
+  // @media (max-width: 786px) {
+  //   margin-left: 1.8rem;
+  // }
+}
+
+.cryptocoins__container {
+  padding: 5px;
+}
+
+.cryptocoins__header {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    color: var(--color-blue);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.cryprocoins__item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.cryprocoins__item-left {
+  display: flex;
+
+  img {
+    width: 60px;
+    height: 60px;
+    -o-object-fit: cover;
+    object-fit: cover;
+
+    @media (max-width: 346px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  h4 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+
+    @media (max-width: 346px) {
+      font-size: 0.8rem;
+      margin-top: 0.6rem;
+    }
+
+    @media (max-width: 250px) {
+      font-size: 0.6rem;
+    }
+  }
+}
+
+
+.cryprocoins__item-right {
+  @media (max-width: 328px) {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  @media (max-width: 250px) {
+    margin: 0.2rem;
+  }
+
+  @media (max-width: 250px) {
+    font-size: 0.6rem;
+  }
+}

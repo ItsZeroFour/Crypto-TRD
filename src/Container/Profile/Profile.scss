@@ -1,0 +1,133 @@
+.profile__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.profile__top-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+
+  img {
+    width: 60px;
+    height: 60px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+    outline: 3px solid var(--color-blue);
+  }
+
+  h2 {
+    margin-top: 1rem;
+    color: var(--color-blue);
+
+    @media (max-width: 342px) {
+      font-size: 1rem;
+    }
+  }
+
+  h3 {
+    @media (max-width: 342px) {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 994px) {
+    margin-top: 5rem;
+  }
+}
+
+.profile__authenticated {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    margin-top: 1rem;
+  }
+
+  button {
+    margin-top: 1rem;
+    background: var(--color-blue) !important;
+    width: 10rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: var(--color-white) !important;
+    border-radius: var(--border-radius-md);
+    transition: var(--transition) !important;
+
+    &:hover {
+      opacity: 0.9;
+      box-shadow: 0 0 5px var(--color-blue) !important;
+    }
+  }
+
+  @media (max-width: 994px) {
+    margin-top: 3rem;
+  }
+}
+
+.profile__main {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.profile__main-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+
+  h3 {
+    padding: 1rem;
+    color: var(--color-blue) !important;
+
+    span {
+      color: var(--color-white) !important;
+      font-weight: bold;
+      margin-left: 1rem;
+
+      @media (max-width: 734px) {
+        margin-left: 0.1rem;
+      }
+
+      @media (max-width: 342px) {
+        font-weight: 400;
+      }
+    }
+
+    @media (max-width: 734px) {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 528px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (max-width: 342px) {
+      font-size: 0.9rem;
+      write-space: wrap;
+    }
+  }
+
+  @media (max-width: 808px) {
+    margin-left: 1rem;
+  }
+}
+
+.profile__logout {
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: var(--color-white) !important;
+  background: var(--color-danger) !important;
+  border-radius: var(--border-radius-sm) !important;
+}

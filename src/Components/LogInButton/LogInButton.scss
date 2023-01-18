@@ -1,0 +1,17 @@
+.login__button {
+  width: 90%;
+  margin: 2rem 1rem 1rem 1rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  border-radius: var(--border-radius-lg) !important;
+  background: var(--color-blue) !important;
+  color: var(--color-white) !important;
+
+  svg {
+    margin-left: 0.5rem;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 10px var(--color-blue) !important;
+  }
+}

@@ -1,0 +1,349 @@
+.converter {
+  background: var(--color-light-black) !important;
+  border-radius: var(--border-radius-lg) !important;
+  width: 400px;
+  height: 170%;
+  margin: 25px;
+
+  @media (max-width: 994px) {
+    height: 50rem;
+    width: 45rem;
+    margin: 0;
+  }
+
+  @media (max-width: 786px) {
+    width: 90%;
+    margin-left: 1.5rem;
+  }
+
+  @media (max-width: 429px) {
+    height: 55rem;
+    margin-left: 1.2rem;
+  }
+
+  @media (max-width: 300px) {
+    margin-left: 1rem;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .social__container {
+    position: absolute;
+    // bottom: -10rem;
+    margin-top: 70rem;
+  }
+
+  .social__link {
+    color: var(--color-white) !important;
+    padding: 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media (max-width: 994px) {
+    display: none;
+  }
+}
+
+.converter__container {
+  padding: 1rem;
+}
+
+.converter__crypto-img {
+  width: 50px;
+  height: auto;
+}
+
+.converter__crypto-price {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  line-height: 0.5;
+
+  @media (max-width: 321px) {
+    font-size: 1.4rem;
+  }
+
+  @media (max-width: 282px) {
+    font-size: 1.1rem;
+  }
+}
+
+.converter__crypto-name {
+  @media (max-width: 321px) {
+    font-size: 1.1rem;
+  }
+}
+
+.converter__crypto-name {
+  margin-left: 1rem;
+}
+
+.converter__crypto-item {
+  display: flex;
+}
+
+.converter__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.converter__convert {
+  background: var(--color-black) !important;
+  border-radius: var(--border-radius-lg) !important;
+  padding: 1.2rem;
+  margin-top: 2rem;
+  width: 90%;
+  height: 20rem;
+
+  svg {
+    margin-top: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @media (max-width: 407px) {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+.converter__select {
+  padding: 5px;
+  background: var(--color-black);
+  color: var(--color-white) !important;
+  border-bottom: 1px solid var(--color-light-black) !important;
+  font-size: 1.2rem;
+
+  option {
+    color: var(--color-white);
+  }
+
+  @media (max-width: 350px) {
+    font-size: 1rem;
+  }
+}
+
+.converter__convert-content {
+  margin-top: 1rem;
+}
+
+.converter__crypto-item {
+  @media (max-width: 407px) {
+    font-size: 1.2rem;
+  }
+}
+
+.converter__convert-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.converter__input {
+  box-shadow: var(--box-shadow) !important;
+  background: var(--color-light-black) !important;
+  color: var(--color-white) !important;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+  border-radius: var(--border-radius-lg);
+  width: 100%;
+
+  &::-webkit-input-placeholder {
+    color: #d9d9d9;
+  }
+
+  &::-moz-placeholder {
+    color: #d9d9d9;
+  }
+
+  &:-ms-input-placeholder {
+    color: #d9d9d9;
+  }
+
+  &::-ms-input-placeholder {
+    color: #d9d9d9;
+  }
+
+  &::placeholder {
+    color: #d9d9d9;
+  }
+}
+
+.converter__error {
+  padding: 1rem;
+}
+
+.converter__proloader {
+  margin-left: 50%;
+  margin-top: 50%;
+}
+
+// Circle bar
+.circle__bar-wrapper {
+  @media (max-width: 994px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 429px) {
+    flex-direction: column;
+  }
+}
+
+.circle-wrap {
+  position: absolute;
+  margin-top: 3rem;
+  margin-left: 6.5rem;
+  width: 150px;
+  height: 150px;
+  background: #fefcff;
+  border-radius: 50%;
+  border: 1px solid #cdcbd0;
+  cursor: pointer;
+
+  @media (max-width: 994px) {
+    position: static;
+    margin-left: 0;
+  }
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill,
+.circle-wrap2 .circle .mask2,
+.circle-wrap2 .circle .fill2 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #227ded;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap2 .circle .mask2 {
+  clip: rect(0px, 150px, 150px, 74px);
+}
+
+.mask.full,
+.circle .fill,
+.mask2.full2,
+.circle .fill2 {
+  -webkit-animation: fill ease-in-out 3s;
+  animation: fill ease-in-out 3s;
+}
+
+.circle-wrap .inside-circle,
+.circle-wrap2 .inside-circle {
+  max-width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background: var(--color-light-black) !important;
+  text-align: center;
+  margin-top: 14px;
+  margin-left: 14px;
+  color: #1e51dc;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  word-wrap: wrap;
+
+  p {
+    margin-top: 2rem;
+  }
+}
+
+.circle__menu-info,
+.circle__menu-info2 {
+  position: absolute;
+  margin-top: 12rem;
+  margin-right: 2%;
+  background: var(--color-black) !important;
+  border-radius: var(--border-radius-lg) !important;
+  width: auto;
+  height: auto;
+  padding: 1rem;
+
+  .circle__bar-wrapper {
+    @media (max-width: 994px) {
+      margin-top: 5rem;
+    }
+  }
+
+  @media (max-width: 429px) {
+    margin-top: 2rem;
+    margin-left: 6rem;
+  }
+}
+
+.circle-wrap2 {
+  position: absolute;
+  margin-left: 6.5rem;
+  margin-top: 17rem;
+  width: 150px;
+  height: 150px;
+  background: #fefcff;
+  border-radius: 50%;
+  border: 1px solid #cdcbd0;
+  cursor: pointer;
+
+  @media (max-width: 994px) {
+    position: static;
+    margin-top: 3rem;
+  }
+
+  @media (max-width: 531px) {
+    margin-left: 2rem;
+  }
+
+  @media (max-width: 453px) {
+    margin-left: 1rem;
+  }
+
+  @media (max-width: 429px) {
+    margin-left: 0;
+  }
+}
+
+.circle__menu-info2 {
+  margin-top: 27rem;
+
+  @media (max-width: 994px) {
+    margin-top: 15rem;
+    margin-left: 10rem;
+  }
+
+  @media (max-width: 429px) {
+    margin-top: 29rem;
+    margin-left: 6rem;
+  }
+}
+
+.mask2 .fill2 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: var(--color-success) !important;
+}
+
+.converter__fovorite {
+  margin-left: 2rem;
+  margin-top: 1rem;
+
+  svg {
+    padding: 0.5rem;
+    border: 1px solid var(--color-black);
+    border-radius: 50%;
+  }
+}

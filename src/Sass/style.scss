@@ -1,0 +1,18 @@
+// =================== All styles required ===================
+// Other
+@import "./error.scss";
+@import "./preloader.scss";
+// Components
+@import "../Components/Header/Header.scss";
+@import "../Components/Chart/TradeChart.scss";
+@import "../Components/LatestPrice/LatestPrice.scss";
+@import "../Components/Cryptocoins/Cryptocoins.scss";
+@import "../Components/LeftPanel/Converter/Converter.scss";
+@import "../Components/LogInButton/LogInButton.scss";
+@import "../Components/LogOutButton/LogOutButton.scss";
+// Container
+@import "../Container/Main/Main.scss";
+@import "../Container/News/News.scss";
+@import "../Container/ContactUs/ContactUs.scss";
+@import "../Container/Profile/Profile.scss";
+@import '../Container/TopCryptocurrency/TopCryptocurrency.scss'
