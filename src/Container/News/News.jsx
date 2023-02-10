@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import demoPhoto from "../../images/demoPhoto.jpg";
 
 const News = () => {
-  const [news, setNews] = useState({});
+  const [news, setNews] = useState([]);
 
   useEffect(() => {
     const options = {
@@ -27,7 +27,7 @@ const News = () => {
 
   return (
     <div className="news">
-      {Object.keys(news).length !== 0 ? (
+      {news.length !== 0 ? (
         <div className="container">
           <div className="news-wrapper">
             {news.value.map((data) => (
