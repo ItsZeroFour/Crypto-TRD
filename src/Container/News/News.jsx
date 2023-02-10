@@ -17,7 +17,7 @@ const News = () => {
     };
 
     fetch(
-      "https://bing-news-search1.p.rapidapi.com/news/&count=12&textFormat=Raw&setLang=en&safeSearch=Off",
+      "https://bing-news-search1.p.rapidapi.com/news/search?q=cryptocurrencies&count=12&textFormat=Raw&setLang=en&safeSearch=Off",
       options
     )
       .then((response) => response.json())
